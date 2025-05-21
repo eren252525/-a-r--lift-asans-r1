@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Panel</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="panel-screen">
+<div class="header">ÇAĞRI LİFT ASANSÖR KULLANIM PANELİ</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<div class="menu" id="menu">
+<a onclick="showSection('bakim')">Bakımlar</a>
+<a onclick="showSection('revizyon')">Revizyonlar</a>
+<a onclick="showSection('ariza')">Arızalar</a>
+<a onclick="showSection('montaj')">Montajlar</a>
+</div>
+<div id="content">
+<div class="section" id="bakim"></div>
+<div class="section" id="revizyon" style="display:none;"></div>
+<div class="section" id="ariza" style="display:none;"></div>
+<div class="section" id="montaj" style="display:none;"></div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
